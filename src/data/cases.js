@@ -1,0 +1,47 @@
+export const CASES = [
+  {
+    id: "a",
+    name: "Camp case 04",
+    context: "Fundus camera · Bathinda screening camp",
+    initialQuality: "good",
+    severity: "moderate",
+    icdrGrade: 2,
+    icdrLabel: "Moderate NPDR",
+    confidence: 0.91,
+    action: "Route to ophthalmologist for review",
+    tone: "marigold",
+  },
+  {
+    id: "b",
+    name: "Camp case 11",
+    context: "Smartphone adapter · low-light indoor capture",
+    initialQuality: "blur",
+    severity: "mild",
+    icdrGrade: 1,
+    icdrLabel: "Mild NPDR",
+    confidence: 0.87,
+    action: "Routine follow-up in 12 months",
+    tone: "clinical",
+  },
+  {
+    id: "c",
+    name: "Camp case 22",
+    context: "Fundus camera · community outreach van",
+    initialQuality: "good",
+    severity: "pdr",
+    icdrGrade: 4,
+    icdrLabel: "Proliferative DR",
+    confidence: 0.95,
+    action: "Urgent referral — within the week",
+    tone: "alert",
+  },
+];
+
+export const STEPS = [
+  { id: "capture", label: "Capture" },
+  { id: "quality", label: "Quality" },
+  { id: "detect", label: "Detect" },
+  { id: "grade", label: "Grade" },
+  { id: "explain", label: "Explain" },
+  { id: "act", label: "Act" },
+];
